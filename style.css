@@ -1,0 +1,73 @@
+#name {
+  font-family: 'Jura', sans-serif;
+  font-size: 4em;
+}
+
+.all {
+  margin-top: 5em;
+}
+
+.icon {
+  margin: 0 15px 0 0; 
+  cursor: pointer;
+}
+
+.projects {
+  list-style-type: none;
+  list-style: none;
+  padding: 0;
+}
+
+.box {
+  position: relative;
+  height: 150px;
+  cursor: pointer;
+  -webkit-box-shadow: 3px 3px 10px 3px rgba(171,180,186,0.7);
+  -moz-box-shadow: 3px 3px 10px 3px rgba(171,180,186,0.7);
+  box-shadow: 3px 3px 10px 3px rgba(171,180,186,0.7);
+}
+
+.text-block {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  clip-path: polygon(0% 0, 85% 0, 25% 100%, 0% 100%);
+  background: rgba(255,255,255,0.75);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);  
+  height: 100%;
+  width: 50%;
+}
+.info {
+  margin: 0.7em;
+}
+.moreinfo {
+  opacity: 0;
+  width: 75%;
+}
+
+.img-hover-zoom {
+  overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+}
+
+/* [2] Transition property for smooth transformation of images */
+.img-hover-zoom img {
+  transition: transform .75s ease;
+}
+.img-hover-zoom .text-block {
+  transition: clip-path .75s ease;
+}
+.img-hover-zoom .moreinfo {
+  transition: opacity .5s ease-in;
+}
+
+/* [3] Finally, transforming the image when container gets hovered */
+.img-hover-zoom:hover img {
+  transform: scale(1.1);
+}
+.img-hover-zoom:hover .text-block {
+  clip-path: polygon(0% 0, 100% 0, 70% 100%, 0% 100%);
+}
+.img-hover-zoom:hover .moreinfo {
+  opacity: 90%;
+}

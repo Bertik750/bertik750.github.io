@@ -33,9 +33,9 @@
             <div id="in" class="icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
             </div>
-            <!-- <div id="cv" class="icon">
+            <div id="cv" class="icon">
               <svg width="24" height="24" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="m333.205 34.213-2.406-34.213-321.253 22.591 30.317 431.118 44.011-3.095v61.386h322.046v-35.276l50.265 5.413 46.27-429.698zm-249.331 386.306-16.17 1.137-26.105-371.224 261.359-18.38 3.359 47.765h-222.443zm292.026 61.46h-262.005v-372.141h262.005zm53.652-32.906-23.631-2.545v-366.711h-69.508l-1.068-15.18 134.049 14.434z"/><path d="m147.003 296.746h195.796v30.021h-195.796z"/><path d="m147.003 350.143h195.796v30.021h-195.796z"/><path d="m147.003 403.54h195.796v30.021h-195.796z"/><path d="m201.384 229.293c-13.238 0-22.154-9.186-22.154-23.64s8.915-23.64 22.154-23.64c8.511 0 15.13 4.053 20.668 11.078l20.128-17.966c-9.321-12.157-23.911-18.912-42.418-18.912-30.394 0-52.684 20.398-52.684 49.442s22.289 49.442 52.684 49.44c18.508 0 33.097-6.754 42.418-18.912l-20.128-17.966c-5.538 7.023-12.157 11.076-20.668 11.076z"/><path d="m321.075 158.373-23.1 55.251-22.56-55.251h-34.313l39.986 94.561h31.341l39.985-94.561z"/></svg>
-            </div> -->
+            </div>
           </div>
           <hr>
           <div>
@@ -54,9 +54,23 @@
           <div>
             <h2 style="margin-bottom: 15px">Latest Projects</h2>
             <ul class="projects">
+              <li id="radio" data-toggle="modal" data-target="#radioModal">
+                <div class="box img-hover-zoom">
+                  <img src="./src/radio/radio.jpeg" alt="Radio-Amateur Bertram" style="width:100%;">
+                  <div class="text-block">
+                    <div class="info">
+                      <h4><b>Radio-Amateur</b></h4>
+                      <div class="moreinfo">
+                        <p>Licensed Radio-Amateur by IARU<br>Focusing on EME (Earth-Moon-Earth).</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <br>
               <li id="c19">
                 <div class="box img-hover-zoom ">
-                  <img src="./src/c19.png" alt="c19model.com VirusSimulation" style="width:100%;">
+                  <img src="./src/c19.png" alt="c19model.com VirusSimulation Bertram Skarupa" style="width:100%;">
                   <div class="text-block">
                     <div class="info">
                       <h4><b>c19model.com</b></h4>
@@ -64,9 +78,18 @@
                         <p>A Covid-19 interactive & educational simulation.<br>Featured by multiple Czech national media.</p>
                       </div>
                     </div>
-                    <div class="popup ">
-                      <div>
-                        Hello, test
+                  </div>
+                </div>
+              </li>
+              <br>
+              <li id="ftc">
+                <div class="box img-hover-zoom">
+                  <img src="./src/ftc.png" alt="Powered by redstone first tech challenge FTC team #17089 Bertram Skarupa" style="width:100%;">
+                  <div class="text-block">
+                    <div class="info">
+                      <h4><b>Powered By Redstone</b></h4>
+                      <div class="moreinfo">
+                        <p>FIRST Tech Challenge team leader<br>Recently: Innovation Award winners at Spain Championship</p>
                       </div>
                     </div>
                   </div>
@@ -87,20 +110,6 @@
                 </div>
               </li>
               <br>
-              <li id="ftc">
-                <div class="box img-hover-zoom">
-                  <img src="./src/ftc.png" alt="Powered by redstone first tech challenge FTC team #17089" style="width:100%;">
-                  <div class="text-block">
-                    <div class="info">
-                      <h4><b>Powered By Redstone</b></h4>
-                      <div class="moreinfo">
-                        <p>FIRST Tech Challenge team leader<br>Recently: Innovation Award winners at Spain Championship</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <br>
               <li id="kavarna">
                 <div class="box img-hover-zoom">
                   <img src="./src/kavarna.png" alt="Kafe accounting system" style="width:100%;">
@@ -114,13 +123,122 @@
                   </div>
                 </div>
               </li>
-              
             </ul>
           </div>
+
+          <hr>
+          <br>
+          <div>
+            <h2 style="margin-bottom: 15px">Featured In & Contributed to:</h2>
+            <div class="featured">
+              <div class="article box" id="stredoskolak">
+                <div class="bottomText">High Scool Student Award</div>
+              </div>
+              <div class="article box" id="aktualne">
+                <div class="bottomText">Aktualne.cz</div>
+              </div>
+              <div class="article box" id="denik">
+                <div class="bottomText">Denik.cz</div>
+              </div>
+              <div class="article box" id="bobr">
+                <div class="bottomText">Bebras Challenge Contributor</div>
+              </div>
+              <div class="article box" id="blesk">
+                <div class="bottomText">Blesk.cz</div>
+              </div>
+              <div class="article box" id="prague">
+                <div class="bottomText">PragueMorning.cz</div>
+              </div>
+              <div class="article box" id="prima">
+                <div class="bottomText">TV Prima</div>
+              </div>
+              <div class="article box" id="ct">
+                <div class="bottomText">Czech Television</div>
+              </div>
+
+            </div>
+          </div>
+          <div style="padding-top: 200px;"></div>
 
 
         </div>
         <div class="col-lg-2">
+        </div>
+      </div>
+      <div class="modal fade" id="radioModal" tabindex="-1" role="dialog" aria-labelledby="radioModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title" id="radioModalLabel"><b>Callsign: OK1BRT</b></h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-6">
+                    <img src="./src/radio/bertram.jpg" class="img-fluid rounded float-left">
+                  </div>
+                  <div class="col-md-6 ml-auto">
+                    <p style="line-height: 1.8;">
+                      Hello, <br>
+                      I became a licensed radio-amateur at age 18. 
+                      I am most interested in EME connections and researching the lunar orbit using amateur radio.
+                      I mainly use digital modes like JT65B or FT8 to make connection in HF and VHF. 
+                      However, I also participated in traditional SSB VHF comeptitions. <br><br>
+                      My QRZ page: <a href="https://www.qrz.com/db/OK1BRT" target="_blank"><img src="./src/radio/qrz.png" width="25" height="25" class="img-fluid rounded"/></a>
+                    </p>
+                  </div>
+                </div>
+                <br>
+                <div class="row">
+                  <div class="col-md-6 ml-auto">
+                    <p style="line-height: 2;">
+                      <h4>My setup:</h4>
+                      <ul>
+                        <li>Transceiver: Yaesu 991a</li>
+                        <li>Antennas:&nbsp;
+                        <ul>
+                          <li>2x 8el Yagi 144MHz</li>
+                          <li>25m dipole 3.5-30MHz</li>
+                        </ul>
+                        </li>
+                        <li>Yagi rotator: Yaesu G-1000dxc</li>
+                        <li>Tajfun 1000 Amplifier</li>
+                      </ul>
+                    </p>
+                  </div>
+                  <div class="col-md-6">
+                    <img src="./src/radio/setup.jpg" class="img-fluid rounded float-left">
+                  </div>
+                </div>
+              </div>
+              <hr>
+
+              <h3 style="text-align: center;">Images:</h3>
+              <div class="imgRow">
+                <div class="imgCol">
+                  <img src="./src/radio/r1.jpeg" class="scale">
+                  <img src="./src/radio/r2.png" class="scale">
+                </div>
+                <div class="imgCol">
+                  <img src="./src/radio/r7.JPG" class="scale">
+                  <img src="./src/radio/r4.jpeg" class="scale">
+                </div>
+                <div class="imgCol">
+                  <img src="./src/radio/r6.jpeg" class="scale">
+                  <img src="./src/radio/r3.jpeg" class="scale">
+                </div>
+                <div class="imgCol">
+                  <img src="./src/radio/r8.JPG" class="scale">
+                  <img src="./src/radio/r9.JPG" class="scale">
+                </div>
+              </div>
+              <br>
+              <br>
+            </div>
+          </div>
         </div>
       </div>
     </div>

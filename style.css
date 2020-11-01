@@ -102,26 +102,6 @@
   width: 100%;
   transition:.4s all;
 }
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-  .imgCol {
-    flex: 50%;
-    max-width: 50%;
-  }
-  .article {
-    width: 100%;
-  }
-}
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .imgCol {
-    flex: 100%;
-    max-width: 100%;
-  }
-  .article {
-    width: 100%;
-  }
-}
 
 .scale:hover {
   -webkit-transform: scale(2); 
@@ -189,4 +169,25 @@
 
 #stredoskolak {
   background-image: url('./src/stredoskolakScreen.png');
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .imgCol {
+    flex: 50%;
+    max-width: 50%;
+  }
+  .article {
+    width: 100%;
+  }
+}
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .imgCol {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .article {
+    width: 100%;
+  }
 }

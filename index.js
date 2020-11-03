@@ -19,6 +19,10 @@ document.getElementById("in").addEventListener("click", function(){
 document.getElementById("cv").addEventListener("click", function(){
   window.open('https://drive.google.com/file/d/1tkMLevh2bcDAfh89piOGNmgdNhKrUTAQ/view');
 });
+document.getElementById("github").addEventListener("click", function(){
+  window.open('https://github.com/Bertik750');
+});
+
 
 document.getElementById("aktualne").addEventListener("click", function(){
   window.open('https://magazin.aktualne.cz/dobre-zpravy/simulace-koronavir/r~b0e6dd6c78af11ea9d470cc47ab5f122/');

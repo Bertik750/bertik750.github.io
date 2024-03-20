@@ -4,14 +4,14 @@ document.getElementById("c19").addEventListener("click", function(){
 document.getElementById("mb").addEventListener("click", function(){
   window.open('https://chrome.google.com/webstore/detail/managebac-grade-calculato/iccmimianhoklepafpckijcpclgcfblm');
 });
-document.getElementById("ftc").addEventListener("click", function(){
-  window.open('https://poweredbyredstone.team');
-});
-document.getElementById("ftc").addEventListener("click", function(){
-  window.open('https://poweredbyredstone.team');
-});
+// document.getElementById("ftc").addEventListener("click", function(){
+//   window.open('https://poweredbyredstone.team');
+// });
+// document.getElementById("ftc").addEventListener("click", function(){
+//   window.open('https://poweredbyredstone.team');
+// });
 document.getElementById("kavarna").addEventListener("click", function(){
-  window.open('https://github.com/Bertik750/cafeSystem');
+  window.open('https://github.com/BertramShell/cafeSystem');
 });
 document.getElementById("in").addEventListener("click", function(){
   window.open('https://www.linkedin.com/in/bertramskarupa');
@@ -20,7 +20,7 @@ document.getElementById("cv").addEventListener("click", function(){
   window.open('https://drive.google.com/file/d/1tkMLevh2bcDAfh89piOGNmgdNhKrUTAQ/view');
 });
 document.getElementById("github").addEventListener("click", function(){
-  window.open('https://github.com/Bertik750');
+  window.open('https://github.com/BertramShell');
 });
 
 
